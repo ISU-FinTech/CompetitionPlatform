@@ -1,0 +1,21 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.42.0", features = ["full"] }   
+sqlx = { version = "0.8.2", features = ["runtime-tokio-native-tls", "mysql"] }
+dotenvy = "0.15"                                   
+serde = { version = "1.0.216", features = ["derive"] } 
+actix-web = "4.0"                               
+uuid = { version = "1.2", features = ["v4"] } 
+bcrypt = "0.16.0"  
+jsonwebtoken = "9.3.0"
+mysql = "25.0.1"  
+serde_json = "1.0.134"
+rand_core = "0.6"
+actix-cors = "0.7.0"
+rust-argon2 = "2.1.0"
+rand = "0.8.5"
+reqwest = "0.12.9"
