@@ -28,8 +28,8 @@ function Dashboard() {
     useEffect(() => {
         const fetchCompetitionDetails = async () => {
             const response = await axios.post('http://localhost:8080/getcompetition', {competition_id: Number(competition_id)});
-            const check = await axios.get("http://localhost:8080/gethash")
-            console.log(check)
+            const hash = await axios.get("http://localhost:8080/gethash")
+            console.log(hash)
             const data = response.data.competition;
             setCompetitionDetails(data);
         };
